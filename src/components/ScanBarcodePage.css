@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.scanner-container {
+  display: flex;
+  justify-content: center; /* จัดกึ่งกลางแนวนอน */
+  align-items: center; /*จัดกึ่งกลางแนวตั้ง */
+  height: 100vh; /* ให้ครอบคลุมความสูงเต็มหน้าจอ */
+  background-image: url('../images/background.png'); /* พาธของรูปภาพ */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 100%; /* ให้ครอบคลุมความกว้างเต็มหน้าจอ */
+}
+
+.logo1 {
+  /* width: 100px; */
+  /* height: 100px; */
+  /* margin-top: 10px; */
+}
+.scanner-view {
+  margin-top: -28ch;
+  position: relative;
+  display: inline-block;
+  /* width: 100%; */
+  /* height: 350px; */
+}
+
+.image1 {
+  width: 10%;
+  height: 10%;
+}
+.scanner-box {
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  /* margin-top: -20%; */
+  margin: 0 auto;
+  height: 100%; /* ปรับขนาดให้เต็มพื้นที่ของ .scanner-view */
+  /* border: 5px solid #00f; เพิ่มขอบสีน้ำเงินให้ใหญ่ขึ้น */
+  border-radius: 10px;
+  /* overflow: hidden; */
+}
+
+.show-barcode {
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+}
+
+.scanner-box video,
+.scanner-box .webcam {
+  width: 100%;
+  height: auto;
+}
+
+.scanner-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* กำหนดความสูงให้ครอบคลุมเช่นเดียวกับ .scanner-container */
+}
+
+.barcode-box {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  height: 40%;
+  border: 3px solid #00FFFF;
+  box-sizing: border-box;
+}
+
+.barcode-box::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* กำหนดตำแหน่งให้เส้นอยู่ตรงกลางแนวนอน */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: red; /* เส้นสีแดงแนวนอน */
+  transform: translateY(-50%);
+}
+.barcode-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: black; /* แสดงบาร์โค้ดเป็นตัวหนังสือสีดำ */
+}

@@ -1,0 +1,82 @@
+/* App.css */
+
+/* Set the background color of the entire page to white and text color to black */
+body {
+  background-color: white;
+  color: black;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Set a default font family */
+}
+
+/* Styles for the container to center its content */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+.logo {
+  width: 10vw; /* 10% of viewport width */
+  height: 10vh; /* 10% of viewport height */
+  margin: 0 10px; /* Margin between logos */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Ensure the card background is white */
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.read-the-docs {
+  margin-top: 20px;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 600px) {
+  .logo {
+    width: 20vw; /* 20% of viewport width */
+    height: 20vh; /* 20% of viewport height */
+  }
+
+  .card {
+    width: 90vw; /* 90% of viewport width */
+    height: auto; /* Height adjusts based on content */
+    padding: 10px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .read-the-docs {
+    font-size: 14px;
+  }
+}
