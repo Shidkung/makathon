@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import overlayImage from './image.png';
 import imageMain from'./mainpage.jpg';
 import makroplus from'./Bright_Colorful_Playful_Funny_Donuts_Food_Circle_Logo_1.png';
+import takra from './ตะกร้า.png'
 const home: React.FC = () => {
     return (
         <div style={containerStyle}>
@@ -30,6 +31,13 @@ const home: React.FC = () => {
                         style={overlayImageStyle}
                     />
                 </Link>
+                <Link to="/mybill" style={iconListOverlayStyletakra}>
+                    <img 
+                        src={takra} // Replace with your overlay image URL
+                        alt="Overlay Image"
+                        style={overlayImageStyletakra}
+                    />
+                </Link>
             </div>
         </div>
     );
@@ -53,13 +61,23 @@ const imageContainerStyle: React.CSSProperties = {
   
     
 };
-
+const iconListOverlayStyletakra: React.CSSProperties = {
+    position: 'absolute',
+    top: '97%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: '150px',  // Set the width of the overlay container
+    textAlign: 'center', // Center text under the icon
+};
 const imageStyle: React.CSSProperties = {
     width: '430px',  /* Fixed width */
     height: '932px',  /* Fixed height */
     objectFit: 'cover',
 };
-
+const overlayImageStyletakra: React.CSSProperties = {
+    width: '70px',     // Adjust size as needed
+    height: '50px',    // Maintain aspect ratio
+};
 const iconListOverlayStyle: React.CSSProperties = {
     position: 'absolute',
     top: '97.1%',
