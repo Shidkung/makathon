@@ -1,6 +1,6 @@
 // src/App.tsx
 import React from 'react';
-import Cart from '../components/cart';
+import Cart from '../components/Cart';
 import { CartItem } from '../types';
 
 const items: CartItem[] = [
